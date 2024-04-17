@@ -347,81 +347,82 @@ footer h2 {
 
 /* Адаптив */
 @media all and (max-width: 1024px) {
-  .logo h2 {
-    margin-left: 95px;
+  header {
+    width: 100%;
   }
-  .section-1 {
-    padding: 100px;
+
+  .logo h2,
+  .category p,
+  .category button {
+    font-size: 14px;
+  }
+
+  .header_block {
     flex-direction: column;
+    align-items: center;
+  }
+
+  .section-1_block_left h2,
+  .section-1_block_left p,
+  .section-1_block_left button {
+    font-size: 14px;
   }
   .section-1_block_right {
-    display: flex;
-    order: -1;
-    justify-content: center;
-  }
-  .section-1_block_right img {
     width: 50%;
   }
-  .section-1_block_left h2 {
-    font-size: 55px;
-  }
-  .section-1_block_left {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .section-1_block_left button {
-    width: 240px;
-    height: 65px;
-  }
-  .section-2_block_info1 {
-    font-size: 30px;
-  }
-  .section-2_block_info2 {
-    font-size: 15px;
-  }
-  .section-2_block_info3 {
-    font-size: 15px;
+
+  .section-1_block {
+    overflow-x: auto;
   }
 }
+
 @media all and (max-width: 768px) {
-  .container {
-    margin-right: 0;
-  }
   header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 30px;
+    width: 100%;
+  }
+  .category {
+    width: 1200px;
+    padding-right: 40%;
+    padding-bottom: 10%;
   }
   .logo h2 {
-    margin: 0;
-    font-size: 55px;
+    padding-right: 80%;
   }
-  header {
-    margin-top: 10px;
-    margin-bottom: 10px;
+  .logo h2,
+  .category p,
+  .category button {
+    font-size: 12px;
   }
-  .section-2 {
-    display: none;
-  }
-  .section-1_block_right:hover img {
-    margin-top: 17%;
-    margin-right: 20px;
-    width: 200px;
-    height: 200px;
+
+  .header_block {
+    flex-direction: column;
+    align-items: center;
   }
   .section-1_block_left h2 {
-    font-size: 45px;
-    text-align: center;
+    padding-top: 10%;
   }
-  .section-1_block_left p {
-    font-size: 12px;
-    text-align: center;
+  .section-1_block {
+    display: flex;
+    flex-direction: column;
   }
+  .section-3_block_text p {
+    width: 700px;
+    font-size: 14px;
+  }
+  .section-1_block_left h2,
+  .section-1_block_left p,
   .section-1_block_left button {
-    width: 200px;
-    height: 50px;
-    font-size: 20px;
+    font-size: 12px;
+  }
+  .section-1_block_right {
+    width: 50%;
+  }
+
+  .section-1_block {
+    overflow-x: auto;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
   }
 }
